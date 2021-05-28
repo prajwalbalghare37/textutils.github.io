@@ -1,0 +1,68 @@
+<!-- Backup for index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textutils</title>
+    <style>
+        #text {
+            margin: 0px 0px 0px 0px;
+            width: 100%;
+            display: block;
+        }
+        /* input {
+            display: block;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>This is from templates</h1>
+    <h3>Enter your text below : </h3>
+    <form action="/analyze" method="get">
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        <input type="checkbox" name="removepunc" id="removepunc">Remove punctuations <br>
+        <input type="checkbox" name="uppercase" id="uppercase">Upper Case<br>
+        <input type="checkbox" name="capitalize" id="capitalize">Capitalize <br>
+        <input type="checkbox" name="newlineremove" id="newlineremove">Remove New Line <br>
+        <input type="checkbox" name="spaceremove" id="spaceremove">Remove Extra Space <br>
+        <input type="checkbox" name="charcount" id="charcount">Count Character <br>
+        <button type="submit">Analyze text</button>
+    </form>
+</body>
+
+</html>
+
+
+<!-- Backup for analyzed.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyzing your text</title>
+    <style>
+        #text {
+            margin: 0px 0px 0px 0px;
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is from templates</h1>
+    <h3>Your analyzed text is : </h3>
+    <p>
+        {{analyzed_text}}
+    </p>
+</body>
+
+</html>
